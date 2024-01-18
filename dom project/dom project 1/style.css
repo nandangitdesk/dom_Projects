@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: coral;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#container{
+    height: 25vw;
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 1vw;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#container #frontlike{
+    font-size: 5vw;
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0);
+    transition: transform ease 1s;
+    cursor: pointer;
+    user-select: none;
+}
+#botlike{
+    font-size: 2vw;
+    color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 77%;
+    left: 40%;
+    
+    
+}
+#chat{
+    font-size: 2vw;
+    color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 77%;
+    left: 43%; 
+}
+#share{
+    font-size: 2vw;
+    color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 77%;
+    left: 46%; 
+}
+
+@media (max-width :500px) {
+   #container{
+    height: 120vw;
+    width: 80vw;
+   } 
+   #container #frontlike{
+    font-size: 25vw;
+   }
+   #container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   }
+    #botlike{
+    top: 85%;
+    left: 10%;
+    font-size: 8vw;
+   }
+   #chat{
+    top: 85%;
+    left: 20%;
+    font-size: 8vw;
+   }
+   #share{
+    top: 85%;
+    left: 30%;
+    font-size: 8vw;
+   }
+}
+

@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    height: 10vw;
+
+    
+}
+#card{
+    height: 30vw;
+    width: 20vw;
+    background-color: #0f0f0f;
+    border-radius: 2vw;
+    filter: drop-shadow(-1px 5px 8px #0000007a);
+    position: relative;
+    
+
+}
+#storiyan{
+    height: 6vw;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background: linear-gradient(yellow, rgb(217, 143, 6), pink, rgb(91, 7, 91), blue);
+    padding: 2px;
+    overflow: hidden;
+    margin-right: 2px;
+    display: inline-block;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    transition: all ease-in-out 2s;
+
+}
+@media (max-width:500px) {
+    #logo{
+        height: 40vw;
+    }
+    #card{
+        height: 120vw;
+        width: 80vw;
+    }
+    #storiyan{
+        height: 20vw;
+        padding: 2vw;
+    }
+    .story{
+        height: 15vw;
+        width: 15vw;
+        margin-right: 4px;
+    }
+}
